@@ -820,15 +820,9 @@ function sendWhatsAppOrder(order) {
     window.open(whatsappUrl, '_blank');
 }
 
-// Mostrar Toast
+// Mostrar Toast (desactivado para evitar obstrucciones en la UI móvil)
 function showToast(message) {
-    const toastMsg = toast.querySelector('.toast-message');
-    toastMsg.textContent = message;
-    
-    toast.classList.add('active');
-    setTimeout(() => {
-        toast.classList.remove('active');
-    }, 3000);
+    // Desactivado
 }
 
 // Controladores de Eventos de la Barra de Navegación Inferior (Móvil/Tablet)
